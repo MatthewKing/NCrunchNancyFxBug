@@ -7,7 +7,7 @@
     // I'm implementing IViewResolver rather than using actual views so that we can be sure that both views
     // are provided, and have the exact same contents.
 
-    public class MyViewResolver : IViewResolver
+    public class ExampleViewResolver : IViewResolver
     {
         public ViewLocationResult GetViewLocation(string viewName, dynamic model, ViewLocationContext viewLocationContext)
         {

@@ -12,7 +12,7 @@
             var bootstrapper = new ConfigurableBootstrapper(config =>
             {
                 config.Module<ExampleModule>();
-                config.ViewResolver(new MyViewResolver());
+                config.ViewResolver<ExampleViewResolver>();
             });
 
             var browser = new Browser(bootstrapper);
@@ -30,7 +30,7 @@
             var bootstrapper = new ConfigurableBootstrapper(config =>
             {
                 config.Module<ExampleModule>();
-                config.ViewResolver(new MyViewResolver());
+                config.ViewResolver<ExampleViewResolver>();
             });
 
             var browser = new Browser(bootstrapper);
